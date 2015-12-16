@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Projects\STM32\Final_Project\Final_Project.uvproj
+Project File Date:  12/10/2015
+
+<h2>Output:</h2>
+Build target 'Final_Project'
+compiling main.c...
+linking...
+Program Size: Code=6004 RO-data=424 RW-data=40 ZI-data=1632  
+FromELF: creating hex file...
+".\Build\Final_Project.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+e "gpio_pin_t" is incompatible with parameter of type "uint16_t"
+          uint8_t rx_pin_source = GPIO_ToGPIOPinSource(usart->rx_pin);
+Source\uart.c(162): error:  #167: argument of type "gpio_pin_t" is incompatible with parameter of type "uint16_t"
+          uint8_t tx_pin_source = GPIO_ToGPIOPinSource(usart->tx_pin);
+Source\uart.c: 0 warnings, 3 errors
+".\Build\Final_Project.axf" - 3 Error(s), 0 Warning(s).
+Target not created
+SPIx"
+          SPI_ITConfig(spi_format->SPIx, interrupt_mode, ENABLE);
+Source\spi.c(55): error:  #136: struct "<unnamed>" has no field "SPIx"
+          NVIC_InitStruct.NVIC_IRQChannel = SPI_FindIRQChannel(spi_format->SPIx);
+Source\spi.c(61): error:  #136: struct "<unnamed>" has no field "SPIx"
+          SPI_Cmd(spi_format->SPIx, ENABLE);
+Source\spi.c(100): error:  #136: struct "<unnamed>" has no field "SPIx"
+          if (spi_format->SPIx == SPI1)
+Source\spi.c(106): error:  #136: struct "<unnamed>" has no field "SPIx"
+          else if (spi_format->SPIx == SPI2)
+Source\spi.c(112): error:  #136: struct "<unnamed>" has no field "SPIx"
+          else if (spi_format->SPIx == SPI3)
+Source\spi.c: 0 warnings, 9 errors
+".\Build\Final_Project.axf" - 9 Error(s), 1 Warning(s).
+Target not created
