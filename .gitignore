@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Description: "Build" directory
+# Created by Loc Pham
+# Date: 16/12/2015
+/Build
